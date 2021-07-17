@@ -1,0 +1,105 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->    
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Loja Virtual</title>
+
+<body>
+    
+    <div class="top-header" id="header">
+        <div class="left">
+            <img src="img/Flag_of_Brazil.svg.png" alt="country Flag">
+            <select>
+                <option value="BRA">Brasil</option>
+                <option value="USA">Estados Unidos</option>
+            </select>
+        </div>
+
+        <div class="right">
+            <a href="#">Minha Conta</a>
+            <a href="#">Lista de Desejos</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sair</a>
+
+        </div>
+    </div>    
+        <div class="main-header-section" id="header">
+            <div class="left">
+                <h1></h1>
+            </div>
+            <div class="center">
+                <a href="#">Home</a>
+                <a href="#">Categoria</a>
+                <!--<div class="dropdow">
+                    <a href="#" class="latest">test<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="">Link1</a>
+                        <a href="">Link2</a>
+                        <a href="">Link3</a>
+                        <a href="">Link4</a>
+                    </div>
+                </div>
+                <div class="dropdow">
+                    <a href="#" class="latest">Blog<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="">Link1</a>
+                        <a href="">Link2</a>
+                        <a href="">Link3</a>
+                        <a href="">Link4</a>
+                    </div>
+                </div>-->
+                <a href="#">Paginas</a>
+                <a href="#">Contato</a>
+
+
+            </div>
+            <div class="right">
+                <form action="#" class="search-product">
+                    <input type="search" name="search" placeholder="Buscar produto"/>
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </form>
+                <div class="lista-desejo">
+                    <i class="far fa-heart"></i>
+                    <span class="lista-desejo-count">02</span>
+                </div>
+                <div class="carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-count">02</span>
+                </div>
+                <button class="sign-btn">Entrar</button>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js">
+            window.onscroll = function(){
+                myFunction();
+            }
+
+    var navbar = document.getElementById('header');
+    var sticky = navbar.offsetTop;
+
+
+    function myFunction(){
+        if(window.pageXOffset >=sticky){
+            navbar.classList.add('sticky');
+            navbar.style.boxShadow = "0 8px 6px -6px black ";
+        }else{
+            navbar.classList.remove('sticky');
+            navbar.style.boxShadow ="none";
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

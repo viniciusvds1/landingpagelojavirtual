@@ -1,0 +1,95 @@
+.footer-section{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer-section .row{
+    display: flex;
+    padding-bottom: 100px;
+}
+.footer-section .logo,
+.footer-section .quick-link,
+.footer-section .novo-produto,
+.footer-section .support{
+    width: 25%;
+}
+
+
+.footer-section .logo .h1{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+.footer-section .support .h1{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+.footer-section .novo-produto .h1{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+.footer-section .quick-link .h1{
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+.footer-section .logo p{
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 24px;
+    color: #868c98;
+}
+
+.footer-section .quick-link a,
+.footer-section .novo-produto a,
+.footer-section .support a{
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 29px;
+    transition: 0.4s;
+    color:#868c98 ;
+}
+.footer-section .quick-link a:hover,
+.footer-section .novo-produto a:hover,
+.footer-section .support a:hover{
+    padding-left: 10px;
+    color: #000;
+
+}
+.copy-right{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 100px;
+
+}
+
+.copy-right .left{
+    display: flex;
+    align-self: center;
+    width: 70%;
+
+}
+
+.copy-right .right{
+    width: 30%;
+    text-align: right;
+
+}
+.copy-right .right .fab{
+    margin: 0px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #313639;
+    padding: 15px;
+    border: 2px solid #c7c5c5;
+}
