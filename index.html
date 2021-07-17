@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
@@ -38,9 +40,7 @@
             <div class="left">
                 <img src="img/imagem1.jgp" alt="">
                 <div class="categoria-caption">
-                    <!--<p>Mulheres</p>
-                    <a href="" class="categoria-btn">Best New Deal</a>
-                    <span class="categoria-collection">Nova Coleção</span>-->
+                    
 
                 </div>
             </div>
@@ -54,9 +54,6 @@
             <div class="right">
                 <img src="img/imagem3.jpg" alt="">
                 <div class="categoria-caption">
-                   <!-- <p>Homens</p>
-                    <a href="" class="categoria-btn">Best New Deal</a>
-                    <span class="categoria-collection">Nova Coleção</span>-->
 
                 </div>
             </div>
@@ -238,23 +235,22 @@
         var entrada = document.getElementById('name');
         var entrada2 = document.getElementById('email');
         document.getElementById('salvar').addEventListener('click', function(){
-        // cria um objeto com os valores dos campos
+        
         var dados = { "name": entrada.value, "email": entrada2.value };
-        // puxa o localStorage para uma variável
+      
         var ls = localStorage.getItem("infos");
 
-        // verifica se o localStorage já existe
+       
         if(ls){
-            // converte o localStorage em array
+            
             var json = JSON.parse(ls);
-            // adiciona o objeto à array
+            
             json.push(dados);
-            // converte a array em string para salvar no localStorage
+           
             json = JSON.stringify(json);
-            // sobrescreve o localStorage com novos valores
             localStorage.setItem("infos", json);
         }else{
-            // se não existe, cria com uma array convertida em string com os dados
+            
             localStorage.setItem("infos", JSON.stringify([dados]));
         }
         });
