@@ -8,9 +8,10 @@
 body{
     overflow-x: hidden;
 }
+
 .hero-section{
     margin-bottom: 150px;
-    background-color: #c7ecff;
+    background-color: #fff;
 }
 .hero-section .row{
     display: flex;
@@ -22,12 +23,6 @@ body{
 }
 .hero-section .left img{
     width: 150%;
-}
-.hero-section .left .imgdesc{
-    width: 150%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
 }
 
 .hero-section .right{
@@ -42,7 +37,7 @@ body{
     font-family: yellowtail, sursive;
     font-size: 40px;
     line-height: 60px;
-    color: #2577fd;
+    color: #1f2022;
 
 }
 .hero-section .right h1{
@@ -359,7 +354,6 @@ body{
     width: 100%;
     text-align: center;
 }
-
 .best-month-collection .right .right-2 h4{
     font-size: 30px;
     font-weight: 600;
